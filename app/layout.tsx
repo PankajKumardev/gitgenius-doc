@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'GitGenius | The Developer Editorial',
     description: 'Transform your repository into an intelligent knowledge base. Zero config. Local-first. AI-powered.',
-    url: 'https://gitgenius.dev',
+    url: 'http://gitgenius.pankajk.tech/',
     siteName: 'GitGenius',
     type: 'website',
   },

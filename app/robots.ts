@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://gitgenius.dev/sitemap.xml',
+    sitemap: 'http://gitgenius.pankajk.tech//sitemap.xml',
   };
 }
