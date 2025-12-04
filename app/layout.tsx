@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Instrument_Serif, Manrope, JetBrains_Mono } from 'next/font/google';
 import '../index.css';
+import { Analytics } from "@vercel/analytics/next"
 
 const instrumentSerif = Instrument_Serif({
   weight: ['400'],
@@ -52,6 +53,7 @@ export default function RootLayout({
     <html lang="en" className={`${instrumentSerif.variable} ${manrope.variable} ${jetbrainsMono.variable}`}>
       <body className="bg-background text-ink font-sans selection:bg-indigo selection:text-white">
         {children}
+        <Analytics />
       </body>
     </html>
   );
