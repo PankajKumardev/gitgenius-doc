@@ -1,76 +1,42 @@
-# GitGenius Documentation Site
+# GitGenius Documentation
 
-<div align="center">
-<img width="1200" height="475" alt="GitGenius Banner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+Official documentation and landing page for **GitGenius** - Transform your Git repository into an intelligent knowledge base with AI-powered analysis.
 
-## Overview
+## 🚀 About GitGenius
 
-This is the official documentation and landing page for **GitGenius** - an AI-powered Git repository analysis tool. The site showcases GitGenius features, installation instructions, changelog generation, and comprehensive usage examples.
+GitGenius is a powerful CLI tool that uses AI to analyze your Git repository, generate changelogs, enable semantic search, and provide deep insights into your codebase.
 
-**Live Site:** [gitgenius.dev](https://gitgenius.dev) (update with your actual domain)
+**🔗 Links:**
+- 📦 [NPM Package](https://www.npmjs.com/package/gitgenius)
+- 💻 [GitHub Repository](https://github.com/pankajkumardev/gitgenius)
+- 📖 [Documentation](https://github.com/pankajkumardev/gitgenius#readme)
 
-**GitGenius CLI:** [GitHub Repository](https://github.com/pankajkumardev/gitgenius) | [NPM Package](https://www.npmjs.com/package/gitgenius)
+## ⚙️ Tech Stack
 
-## Tech Stack
-
-- **Framework:** [Next.js 16](https://nextjs.org/) with App Router
-- **Language:** TypeScript
+- **Framework:** Next.js 16 (App Router)
 - **Styling:** Tailwind CSS 3.4
 - **Animations:** Framer Motion
-- **Smooth Scrolling:** Lenis
+- **Smooth Scroll:** Lenis
 - **Icons:** Lucide React
-- **Font Optimization:** Next.js Google Fonts
+- **Language:** TypeScript
 
-## Features
+## 📦 Installation
 
-✨ **Modern Design**
-- Editorial-style design with premium aesthetics
-- Smooth scroll animations with Lenis
-- Glassmorphism and modern UI patterns
-- Responsive across all devices
+```bash
+# Clone the repository
+git clone https://github.com/pankajkumardev/gitgenius-doc.git
+cd gitgenius-doc
 
-🔍 **SEO Optimized**
-- Server-side rendering (SSR)
-- Automatic sitemap generation
-- robots.txt configuration
-- Open Graph and Twitter Card metadata
-- Optimized font loading
+# Install dependencies
+npm install
 
-⚡ **Performance**
-- Turbopack bundling for instant updates
-- Optimized images and fonts
-- Minimal JavaScript bundle
-- Fast page loads
+# Run development server
+npm run dev
+```
 
-## Getting Started
+Open [http://localhost:3000](http://localhost:3000) to view the site.
 
-### Prerequisites
-
-- **Node.js** 18.17 or later
-- **npm** or **yarn** or **pnpm**
-
-### Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/pankajkumardev/gitgenius-doc.git
-   cd gitgenius-doc
-   ```
-
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-3. Run the development server:
-   ```bash
-   npm run dev
-   ```
-
-4. Open [http://localhost:3000](http://localhost:3000) in your browser
-
-## Scripts
+## 🛠️ Available Scripts
 
 ```bash
 npm run dev      # Start development server on port 3000
@@ -79,118 +45,81 @@ npm run start    # Start production server
 npm run lint     # Run ESLint
 ```
 
-## Project Structure
+## 📁 Project Structure
 
 ```
 gitgenius-doc/
 ├── app/
-│   ├── layout.tsx      # Root layout with SEO metadata
-│   ├── page.tsx        # Home page
+│   ├── layout.tsx      # Root layout with SEO
+│   ├── page.tsx        # Main page
 │   ├── favicon.ico     # Favicon
-│   ├── robots.ts       # robots.txt configuration
+│   ├── robots.ts       # SEO robots.txt
 │   └── sitemap.ts      # Sitemap generation
 ├── components/
-│   ├── Hero.tsx        # Hero section with animation
-│   ├── Installation.tsx # Installation guide
+│   ├── Hero.tsx        # Hero section
+│   ├── Installation.tsx # Install command
 │   ├── Features.tsx    # Features showcase
-│   ├── DeepDive.tsx    # Deep dive section
 │   ├── Changelog.tsx   # Changelog demo
-│   ├── Integration.tsx # Integration examples
-│   ├── Developer.tsx   # Developer section
 │   ├── Footer.tsx      # Footer with links
-│   └── ui/
-│       └── Button.tsx  # Reusable button component
-├── index.css          # Global styles & Tailwind
-├── tailwind.config.js # Tailwind configuration
-├── next.config.js     # Next.js configuration
-└── tsconfig.json      # TypeScript configuration
+│   └── ui/             # UI components
+├── index.css          # Global styles
+├── tailwind.config.js # Tailwind config
+└── next.config.js     # Next.js config
 ```
 
-## Customization
+## 🎨 Customization
 
 ### Colors
 
-Edit the color scheme in `tailwind.config.js`:
+Edit `tailwind.config.js`:
 
 ```javascript
 colors: {
-  background: "#F9F8F6", // Warm Alabaster
-  surface: "#FFFFFF",    // White
-  ink: "#1A1A1A",        // Deep Ink Black
-  indigo: "#4F46E5",     // Brand / Gemini
-  git: "#F05033",        // Git Accent
-  pencil: "#666666",     // Secondary Text
+  background: "#F9F8F6",
+  indigo: "#4F46E5",
+  git: "#F05033",
+  // ... more colors
 }
 ```
 
 ### Fonts
 
-Fonts are configured in `app/layout.tsx` using Next.js font optimization:
-- **Serif:** Instrument Serif (for headlines)
-- **Sans:** Manrope (for body text)
-- **Mono:** JetBrains Mono (for code)
+Fonts are optimized via Next.js in `app/layout.tsx`:
+- Instrument Serif (Headlines)
+- Manrope (Body)
+- JetBrains Mono (Code)
 
-### SEO Metadata
+## 🌐 Deployment
 
-Update SEO information in `app/layout.tsx`:
+### Deploy to Vercel
 
-```typescript
-export const metadata: Metadata = {
-  title: 'Your Title',
-  description: 'Your description',
-  // ... other metadata
-};
-```
+1. Push to GitHub
+2. Import on [Vercel](https://vercel.com)
+3. Deploy!
 
-## Deployment
-
-### Vercel (Recommended)
-
-1. Push your code to GitHub
-2. Import your repository on [Vercel](https://vercel.com)
-3. Deploy with one click!
-
-### Other Platforms
-
-Build the production bundle:
+### Build for Production
 
 ```bash
 npm run build
+npm run start
 ```
 
-The optimized build will be in the `.next` folder. You can deploy it to any platform that supports Node.js.
+## 📊 Features
 
-## Performance
+✅ **SEO Optimized** - Server-side rendering, meta tags, sitemap  
+✅ **Fast Performance** - Turbopack bundling, optimized fonts  
+✅ **Responsive Design** - Works on all devices  
+✅ **Smooth Animations** - Framer Motion + Lenis scroll  
+✅ **Modern UI** - Editorial design with premium aesthetics  
 
-- **Lighthouse Score:** 95+ (Performance, Accessibility, Best Practices, SEO)
-- **First Contentful Paint:** < 1s
-- **Time to Interactive:** < 2s
-- **Bundle Size:** Optimized with Turbopack
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
+## 📄 License
 
 MIT © [Pankaj Kumar](https://github.com/pankajkumardev)
 
-## Links
+## 🤝 Contributing
 
-- **GitGenius CLI:** [GitHub](https://github.com/pankajkumardev/gitgenius)
-- **NPM Package:** [gitgenius](https://www.npmjs.com/package/gitgenius)
-- **Documentation:** [gitgenius.dev](https://gitgenius.dev)
-- **Report Issues:** [GitHub Issues](https://github.com/pankajkumardev/gitgenius/issues)
-
-## Acknowledgments
-
-Built with ❤️ using:
-- [Next.js](https://nextjs.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Framer Motion](https://www.framer.com/motion/)
-- [Lenis](https://lenis.studiofreight.com/)
-- [Lucide Icons](https://lucide.dev/)
+Contributions, issues, and feature requests are welcome!
 
 ---
 
-Made with passion by [Pankaj Kumar](https://github.com/pankajkumardev) for the developer community 🚀
+**Made with ❤️ for the developer community** | [GitGenius v1.1.2](https://www.npmjs.com/package/gitgenius)
