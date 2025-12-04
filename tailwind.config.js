@@ -1,10 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    "./index.html",
-    "./index.tsx",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx}",
-    "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
@@ -19,9 +17,9 @@ export default {
         "wash": "#E5E5E5",     // Grey Wash
       },
       fontFamily: {
-        serif: ['Instrument Serif', 'serif'],
-        sans: ['Manrope', 'sans-serif'], // Geist Proxy
-        mono: ['JetBrains Mono', 'monospace'],
+        serif: ['var(--font-serif)', 'serif'],
+        sans: ['var(--font-sans)', 'sans-serif'],
+        mono: ['var(--font-mono)', 'monospace'],
       },
       boxShadow: {
         'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.05), 0 2px 8px -2px rgba(0, 0, 0, 0.02)',
