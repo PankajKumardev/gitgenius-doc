@@ -1,10 +1,12 @@
 import React from 'react';
 
 const technologies = [
-  { name: 'TypeScript', label: 'TS' },
+  { name: 'Google Gemini', label: 'Gemini AI' },
+  { name: 'TypeScript', label: 'TypeScript' },
   { name: 'Prisma', label: 'Prisma' },
   { name: 'SQLite', label: 'SQLite' },
   { name: 'Oclif', label: 'Oclif' },
+  { name: 'Inquirer', label: 'Inquirer' },
 ];
 
 export const Integration: React.FC = () => {

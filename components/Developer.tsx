@@ -16,7 +16,7 @@ export const Developer: React.FC = () => {
         <div className="flex justify-center gap-8">
           <SocialLink href="https://twitter.com/pankajkumar_dev" icon={Twitter} label="@pankajkumar_dev" />
           <SocialLink href="https://github.com/pankajkumardev" icon={Github} label="pankajkumardev" />
-          <SocialLink href="#" icon={Box} label="npm/gitgenius" />
+          <SocialLink href="https://www.npmjs.com/package/gitgenius" icon={Box} label="npm/gitgenius" />
         </div>
       </div>
     </section>
